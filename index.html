@@ -1,2 +1,31 @@
-<div id="root"></div><script type="module" src="/src/main.tsx"></script>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataforma de Cursos</title>
+    
+    <style>
+      .hover-borda {
+        border: 1px solid transparent; 
+        transition: border-color 0.3s ease;
+        white-space: nowrap;
+      }
+      .hover-borda:hover {
+        border-color: white !important;
+      }
+      
+      .menu-rolavel::-webkit-scrollbar {
+        display: none;
+      }
+      .menu-rolavel {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
