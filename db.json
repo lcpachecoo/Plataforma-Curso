@@ -13,6 +13,13 @@
       "senhaHash": "123456789",
       "dataCadastro": "2000-11-11",
       "id": 2
+    },
+    {
+      "nomeCompleto": "LUCAS CARVALHO PACHECO",
+      "email": "lcpacheco14@gmail.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2005-04-29",
+      "id": 3
     }
   ],
   "categorias": [
