@@ -1,0 +1,19 @@
+/* Efeito de hover na Navbar */
+.hover-borda {
+  border: 1px solid transparent; 
+  transition: border-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.hover-borda:hover {
+  border-color: white !important;
+}
+
+/* Ocultar barra de rolagem do menu */
+.menu-rolavel::-webkit-scrollbar {
+  display: none;
+}
+.menu-rolavel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
