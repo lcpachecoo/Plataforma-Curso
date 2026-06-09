@@ -1,0 +1,168 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nomeCompleto": "Ana ",
+      "email": "ana@email.com",
+      "senhaHash": "hash123",
+      "dataCadastro": "2026-06-01"
+    },
+    {
+      "nomeCompleto": "teste",
+      "email": "teste@email",
+      "senhaHash": "123456789",
+      "dataCadastro": "2000-11-11",
+      "id": 2
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Programação web",
+      "descricao": "Cursos de desenvolvimento"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "React Básico",
+      "descricao": "Introdução ao React",
+      "idInstrutor": 1,
+      "idCategoria": 1,
+      "nivel": "Básico",
+      "dataPublicacao": "2026-06-01",
+      "totalAulas": 2,
+      "totalHoras": 4
+    }
+  ],
+  "modulos": [
+    {
+      "id": 1,
+      "idCurso": 1,
+      "titulo": "Fundamentos",
+      "ordem": 1
+    }
+  ],
+  "aulas": [
+    {
+      "id": 1,
+      "idModulo": 1,
+      "titulo": "Introdução",
+      "tipoConteudo": "Vídeo",
+      "urlConteudo": "https://exemplo.com/aula1",
+      "duracaoMinutos": 30,
+      "ordem": 1
+    }
+  ],
+  "matriculas": [
+    {
+      "id": 1,
+      "idUsuario": 1,
+      "idCurso": 1,
+      "dataMatricula": "2026-06-02",
+      "dataConclusao": null
+    },
+    {
+      "idUsuario": 1,
+      "idCurso": 1,
+      "dataMatricula": "2026-06-05",
+      "dataConclusao": null,
+      "id": 2
+    },
+    {
+      "idUsuario": 2,
+      "idCurso": 1,
+      "dataMatricula": "2026-06-05",
+      "dataConclusao": null,
+      "id": 3
+    }
+  ],
+  "progressosAulas": [
+    {
+      "id": 1,
+      "idUsuario": 1,
+      "idAula": 1,
+      "dataConclusao": "2026-06-03",
+      "status": "Concluída"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": 1,
+      "idUsuario": 1,
+      "idCurso": 1,
+      "nota": 5,
+      "comentario": "Muito bom",
+      "dataAvaliacao": "2026-06-04"
+    }
+  ],
+  "trilhas": [
+    {
+      "id": 1,
+      "titulo": "Front-end",
+      "descricao": "Trilha de desenvolvimento front-end",
+      "idCategoria": 1
+    }
+  ],
+  "trilhasCursos": [
+    {
+      "id": 1,
+      "idTrilha": 1,
+      "idCurso": 1,
+      "ordem": 1
+    }
+  ],
+  "certificados": [
+    {
+      "id": 1,
+      "idUsuario": 1,
+      "idCurso": 1,
+      "idTrilha": null,
+      "codigoVerificacao": "CERT-001",
+      "dataEmissao": "2026-06-05"
+    },
+    {
+      "idUsuario": 1,
+      "idCurso": 1,
+      "idTrilha": null,
+      "codigoVerificacao": "CERT-1780674035284",
+      "dataEmissao": "2026-06-05",
+      "id": 2
+    }
+  ],
+  "planos": [
+    {
+      "id": 1,
+      "nome": "Mensal",
+      "descricao": "Acesso por 1 mês",
+      "preco": 49.9,
+      "duracaoMeses": 1
+    },
+    {
+      "id": 2,
+      "nome": "Anual",
+      "descricao": "Acesso por 12 meses",
+      "preco": 399.9,
+      "duracaoMeses": 12
+    }
+  ],
+  "assinaturas": [
+    {
+      "id": 1,
+      "idUsuario": 1,
+      "idPlano": 1,
+      "dataInicio": "2026-06-01",
+      "dataFim": "2026-07-01"
+    }
+  ],
+  "pagamentos": [
+    {
+      "id": 1,
+      "idAssinatura": 1,
+      "valorPago": 49.9,
+      "dataPagamento": "2026-06-01",
+      "metodoPagamento": "Pix",
+      "idTransacaoGateway": "TX-001"
+    }
+  ]
+}
